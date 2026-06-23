@@ -1,7 +1,7 @@
 {
   "name": "cortex-plugin-merge-conflict",
-  "version": "1.0.0",
-  "description": "Merge Conflict Resolver — Analyze branch intents, suggest resolutions, auto-resolve simple conflicts",
+  "version": "1.0.1",
+  "description": "Merge Conflict Resolver \u2014 Analyze branch intents, suggest resolutions, auto-resolve simple conflicts",
   "kind": "esm",
   "entryPoint": "mod.ts",
   "runtime": "deno",
@@ -9,17 +9,35 @@
   "license": "MIT",
   "repository": "https://github.com/CortexPrism/cortex-plugin-merge-conflict",
   "homepage": "https://cortexprism.io/marketplace/plugins/merge-conflict",
-  "capabilities": ["tools", "network:fetch"],
+  "capabilities": [
+    "tools",
+    "network:fetch"
+  ],
   "tools": [
-    { "name": "merge_analyze", "description": "Analyze conflicting branches", "params": [] },
+    {
+      "name": "merge_analyze",
+      "description": "Analyze conflicting branches",
+      "params": []
+    },
     {
       "name": "merge_suggest",
       "description": "Get resolution suggestions with tradeoffs",
       "params": []
     },
-    { "name": "merge_auto_resolve", "description": "Auto-resolve simple conflicts", "params": [] }
+    {
+      "name": "merge_auto_resolve",
+      "description": "Auto-resolve simple conflicts",
+      "params": []
+    }
   ],
   "dependencies": {},
-  "peerDependencies": { "cortex": ">=1.0.0" },
-  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+  "peerDependencies": {
+    "cortex": ">=0.51.0"
+  },
+  "aiDisclosure": {
+    "tools": [
+      "Kilo (DeepSeek) \u2014 batch scaffold"
+    ],
+    "humanReview": true
+  }
 }
